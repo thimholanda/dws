@@ -1,10 +1,10 @@
 import dompurify from "dompurify";
 import { FiChevronLeft, FiMinus, FiPlus } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import noImg from "../../assets/no-image.png";
 
 import logo from "../../assets/isobarfm.png";
-
+import noImg from "../../assets/no-image.png";
+import { AlbumModal } from "../../components/BandInfoComponents/AlbumModal";
 import stylesBand from "../../components/BandInfoComponents/BandInfoComponents.module.css";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
@@ -12,10 +12,9 @@ import styles from "../../components/Header/Header.module.css";
 import { Loader } from "../../components/Loader";
 import { Logo } from "../../components/Logo";
 import { HEADER_HEIGHT } from "../../constants/layout";
+import { Album } from "../../types/types";
 import { ImageWithFallback } from "../../utils/components/ImageWithFallback";
 import { useBand } from "./useBand";
-import { AlbumModal } from "../../components/BandInfoComponents/AlbumModal.module";
-import { Album } from "../../types/types";
 
 const Band = () => {
   const { albums, albumsIsLoading, band, bioIsExpanded, currentAlbum, handleExpandBiography, isLoading, isModalOpen, setCurrentAlbum, setIsModalOpen } = useBand();

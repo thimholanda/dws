@@ -1,0 +1,54 @@
+.band-filter{
+    display: flex;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+
+    height: var(--band-filter-height);
+    width: 100%;
+    background-color: var(--gray-100);
+
+    z-index: 20;
+}
+
+.band-filter__image-order-by{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.band-filter--container-order-by{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1.25rem;
+    top: 2.5rem;
+    background-color: var(--white);
+}
+
+.band-filter--list-order-by{
+    list-style: none;
+}
+
+.band-filter--item-order-by + .band-filter--item-order-by{
+    border-top: 1px solid var(--gray-400)
+}
+
+.band-filter--btn-item-order-by{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .5rem;
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem;
+
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
+
+    color: var(--white);
+    background-color: var(--gray-600);
+}

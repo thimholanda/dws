@@ -1,0 +1,37 @@
+.search-box{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: 25rem;
+    height: 2.5rem;
+    margin-right: 0.9375rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid var(--gray-300);
+
+    background-color: white;
+}
+
+.search-box__input{
+    display: flex;
+    flex: 1;
+    flex-basis: 3.125rem;
+    min-width: 6.25rem; 
+    height: 100%;
+}
+
+.search-box__btn{
+    margin: 0 0.3125rem;
+    color: var(--gray-700);
+}
+
+.search-box__btn:disabled{
+    color: var(--gray-300);
+}
+
+.search-box__btn--hidden{
+    opacity: 0;
+}
+
+.search-box__input:focus{
+    outline: none;
+}

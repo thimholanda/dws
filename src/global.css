@@ -1,0 +1,60 @@
+:root {
+  --white: #ffffff;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-500: #686876;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+
+  --orange-900: #f04d25;
+
+  --header-height: 4.625rem;
+  --band-filter-height: 2.5rem;
+  --band-genres-height: 3.5rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--white);
+  color: var(--gray-700);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body, input, textarea, button{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  
+  border: 0;
+  background-color: transparent;
+}
+
+button{
+  cursor: pointer;
+  transition: all .3s;
+  
+  line-height: 0;
+
+}
+
+button:hover{
+  opacity: .8;
+}
+
+
+
+

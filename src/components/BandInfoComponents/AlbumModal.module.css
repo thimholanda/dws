@@ -1,0 +1,54 @@
+.album-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.album-modal__container{
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.album-modal img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.album-modal__container h2{
+    color: var(--orange-900);
+    margin-bottom: 20px;
+}
+
+.album-modal__container button{
+    width: 100%;
+    text-align: right;
+    color: var(--gray-700);
+}
+
+.album-modal__container ul{
+    list-style: none;
+}
+
+.album-modal__container li{
+    display: flex;
+}
+
+.album-modal__container li{
+    margin-bottom: 2px;
+}
+
+.album-modal__container p{
+margin-bottom: 10px;
+}

@@ -1,0 +1,24 @@
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.25rem;
+
+    background-color: var(--orange-900);
+    border-bottom: 0.0625rem solid var(--gray-400);
+    opacity: .95;
+
+    z-index: 20;
+}
+
+.header--align-center{
+    margin: 0 auto;
+    transform: translateX(-15%);
+}
